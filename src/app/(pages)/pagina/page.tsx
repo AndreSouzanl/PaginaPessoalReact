@@ -8,7 +8,7 @@ export default function Pagina(){
     <div className="flex h-screen">
      <Menu />
      <div className="flex flex-col flex-1">
-     <Header />
+     <Header titulo="Andre Luiz de Souza" subtitulo="Dev Souza" />
      <Conteudo />
      <Footer />
      </div>

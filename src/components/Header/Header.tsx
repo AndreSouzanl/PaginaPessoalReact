@@ -1,9 +1,16 @@
-import { IconHome } from "@tabler/icons-react";
+interface HeaderProps {
+  titulo: string;
+  subtitulo: string;
+}
 
-export default function Header(){
-  return(
-    <div className="flex text-2xl h-16 justify-center items-center bg-blue-700">
-      <span className="flex gap-2 justify-center items-center"><IconHome />Header</span>
+export default function Header(props: HeaderProps) {
+  return (
+    <div
+      className="flex flex-col text-base p-4 h-20 justify-start px-4 bg-black border-b-2
+    border-zinc-700"
+    >
+      <h1 className="text-xl">{props.titulo}</h1>
+      <h2 className="text-zinc-400">{props.subtitulo}</h2>
     </div>
-  )
+  );
 }
